@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>关于 | pinocc</title>
+<title>Test Code Formatting | pinocc</title>
 
 <link rel="shortcut icon" href="https://pinocc.github.io/favicon.ico?v=1634445113915">
 
@@ -108,27 +108,79 @@
         <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
                 <h2 class="post-title">
-                    关于
+                    Test Code Formatting
                 </h2>
                 <div class="post-info">
                     <time class="post-time gt-c-content-color-first">
-                        · 2019-01-25 ·
+                        · 2021-10-17 ·
                     </time>
                     
                 </div>
                 <div class="post-content">
-                    <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+                    <h1 id="level-1">Level 1</h1>
+<pre><code class="language-json">{
+    &quot;name&quot;: &quot;roy&quot;,
+    &quot;age&quot;: 7
+}
+</code></pre>
+<h2 id="level-2">Level 2</h2>
+<pre><code class="language-java">package com.ysten.cms.biz.content.content.service;
+
+import com.ysten.cms.biz.content.content.repository.bean.ContentApproval;
+import com.ysten.cms.biz.content.content.repository.bean.ContentApprovalQuery;
+import com.ysten.cms.biz.content.content.service.bean.ContentApprovalDto;
+import com.ysten.cms.support.core.Pageable;
+
+/**
+ * 内容审核
+ *
+ * @author create by wangdong
+ * @date 2020/7/19
+ */
+public interface ContentApprovalService {
+
+    /**
+     * 获取分页数据
+     *
+     * @param query    查询条件
+     * @param pageable 分页
+     * @return 分页结果
+     */
+    Pageable&lt;ContentApproval&gt; findPage(ContentApprovalQuery query, Pageable&lt;?&gt; pageable);
+
+    /**
+     * 根据主键ID获取信息
+     *
+     * @param id id
+     * @return ContentApproval
+     */
+    ContentApproval findById(Long id);
+
+    /**
+     * 审核通过/拒绝
+     *
+     * @param contentApprovalDto dto
+     */
+    void saveContentApproval(ContentApprovalDto contentApprovalDto);
+
+
+}
+</code></pre>
+<h3 id="level-3">level 3</h3>
+<pre><code class="language-sql">select * from cms_programset where programset_id = 1;
+</code></pre>
 
                 </div>
             </article>
         </div>
 
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://pinocc.github.io/post/hello-gridea/" class="post-title gt-a-link">
+                    Hello Gridea
+                </a>
+            </div>
         
 
         
