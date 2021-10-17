@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://pinocc.github.io</id>
     <title>pinocc</title>
-    <updated>2021-10-17T05:46:17.826Z</updated>
+    <updated>2021-10-17T06:29:23.304Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://pinocc.github.io"/>
     <link rel="self" href="https://pinocc.github.io/atom.xml"/>
@@ -10,66 +10,6 @@
     <logo>https://pinocc.github.io/images/avatar.png</logo>
     <icon>https://pinocc.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, pinocc</rights>
-    <entry>
-        <title type="html"><![CDATA[Test Code Formatting]]></title>
-        <id>https://pinocc.github.io/post/test-code-formatting/</id>
-        <link href="https://pinocc.github.io/post/test-code-formatting/">
-        </link>
-        <updated>2021-10-17T04:02:11.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="level-1">Level 1</h1>
-<pre><code class="language-json">{
-    &quot;name&quot;: &quot;roy&quot;,
-    &quot;age&quot;: 7
-}
-</code></pre>
-<h2 id="level-2">Level 2</h2>
-<pre><code class="language-java">package com.ysten.cms.biz.content.content.service;
-
-import com.ysten.cms.biz.content.content.repository.bean.ContentApproval;
-import com.ysten.cms.biz.content.content.repository.bean.ContentApprovalQuery;
-import com.ysten.cms.biz.content.content.service.bean.ContentApprovalDto;
-import com.ysten.cms.support.core.Pageable;
-
-/**
- * 内容审核
- *
- * @author create by wangdong
- * @date 2020/7/19
- */
-public interface ContentApprovalService {
-
-    /**
-     * 获取分页数据
-     *
-     * @param query    查询条件
-     * @param pageable 分页
-     * @return 分页结果
-     */
-    Pageable&lt;ContentApproval&gt; findPage(ContentApprovalQuery query, Pageable&lt;?&gt; pageable);
-
-    /**
-     * 根据主键ID获取信息
-     *
-     * @param id id
-     * @return ContentApproval
-     */
-    ContentApproval findById(Long id);
-
-    /**
-     * 审核通过/拒绝
-     *
-     * @param contentApprovalDto dto
-     */
-    void saveContentApproval(ContentApprovalDto contentApprovalDto);
-
-
-}
-</code></pre>
-<h3 id="level-3">level 3</h3>
-<pre><code class="language-sql">select * from cms_programset where programset_id = 1;
-</code></pre>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://pinocc.github.io/post/hello-gridea/</id>
