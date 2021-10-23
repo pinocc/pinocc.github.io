@@ -30,4 +30,4 @@ jobs:
           github_token: ${{ secrets.HUO_DEPLOY }}
           publish_dir: ./public
           cnam: pinocc.cn
-	  publish_branch: hugo-pages
+          publish_branch: hugo-pages
