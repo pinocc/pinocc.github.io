@@ -1,0 +1,4 @@
+baseURL = 'https://pinocc.cn/'
+languageCode = 'zh-cn'
+title = 'XXOO'
+theme = "ananke"
