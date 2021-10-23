@@ -30,4 +30,4 @@ jobs:
         with:
           github_token: ${{ secrets.HUO_DEPLOY }}
           publish_dir: ./public
-	  publish_branch: hugodeploy
+          publish_branch: hugodeploy
