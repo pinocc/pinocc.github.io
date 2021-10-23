@@ -26,8 +26,8 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/hugo'
         with:
           github_token: ${{ secrets.HUO_DEPLOY }}
           publish_dir: ./public
-          publish_branch: hugodeploy
+          cnam: pinocc.cn
+	  publish_branch: hugo-pages
